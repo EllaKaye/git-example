@@ -35,6 +35,6 @@ for line in climate_data:
     data = line.split(',')
     if data[0][0] != COMMENT:
         fahr = float(data[3])
-        celsius = fahr_to_cels(fahr)
+        celsius = fahr_to_celsius(fahr)
         kelvin = fahr_to_kelvin(fahr)
         print('Max temperature in Celsius', celsius, 'Kelvin', kelvin)
